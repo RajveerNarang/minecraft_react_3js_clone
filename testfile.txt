@@ -1,0 +1,15 @@
+hello minecraft game
+
+boilerplate: 
+sky
+Textures and images 
+ground
+player 
+first person view
+gravity
+movement
+state management
+cubes
+cube type selector
+save world in local storage
+build a house 
