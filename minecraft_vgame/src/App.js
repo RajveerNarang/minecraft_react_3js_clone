@@ -6,7 +6,7 @@ function App() {
     <>
       {/* <div> outside Div</div> */}
       <Canvas>
-        <Sky />
+        <Sky sunPosition={[100, 100, 20]} />
       </Canvas>
     </>
   );
