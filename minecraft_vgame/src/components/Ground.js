@@ -3,7 +3,7 @@ import { NearestFilter, RepeatWrapping } from "three";
 import { groundTexture } from "../images/textures";
 export const Ground = () => {
   const [ref] = usePlane(() => ({
-    rotation: [0, 0, 0],
+    rotation: [-Math.PI / 2, 0, 0],
     position: [0, 0, 0],
   }));
   groundTexture.magFilter = NearestFilter;
