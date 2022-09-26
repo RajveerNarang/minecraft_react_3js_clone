@@ -24,6 +24,8 @@ export const Player = () => {
     camera.position.copy(
       new Vector3(pos.current[0], pos.current[1], pos.current[2])
     );
+
+    api.velocity.set(0, 1, 0);
   });
   return <mesh ref={ref}></mesh>;
 };

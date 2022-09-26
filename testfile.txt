@@ -5,6 +5,7 @@ sky
 Textures and images 
 ground
 player 
+keyboard inputs
 first person view
 gravity
 movement
