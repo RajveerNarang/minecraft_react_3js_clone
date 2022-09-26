@@ -1,4 +1,21 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+
+function actionByKey(key) {
+  const keyActionMap = {
+    KeyW: "moveForward",
+    KeyA: "moveBackward",
+    KeyS: "moveLeft",
+    KeyD: "moveRight",
+    Space: "jump",
+    Digit1: "dirt",
+    Digit2: "grass",
+    Digit3: "glass",
+    Digit4: "wood",
+    Digit5: "log",
+  };
+  return keyActionMap[key];
+}
+
 export const useKeyboard = () => {
   const [actions, setActions] = useState({
     moveForward: false,
@@ -13,7 +30,29 @@ export const useKeyboard = () => {
     texture5: false,
   });
 
-  const handelKeyDown = useCallback((e) => {}, []);
+  const handelKeyDown = useCallback((e) => {
+    const action = actionByKey(e.code);
+    if (action) {
+      setActions((prev) => {
+        return {
+          ...prev,
+          [action]: true,
+        };
+      });
+    }
+  }, []);
+
+  const handelKeyUp = useCallback((e) => {
+    const action = actionByKey(e.code);
+    if (action) {
+      setActions((prev) => {
+        return {
+          ...prev,
+          [action]: false,
+        };
+      });
+    }
+  }, []);
 
   useEffect(() => {
     document.addEventListener("keydown", handelKeyDown);
@@ -22,5 +61,7 @@ export const useKeyboard = () => {
       document.removeEventListener("keydown", handelKeyDown);
       document.removeEventListener("keyup", handelKeyUp);
     };
-  });
+  }, [handelKeyDown, handelKeyUp]);
+
+  return actions;
 };
