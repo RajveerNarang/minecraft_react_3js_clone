@@ -3,8 +3,8 @@ import { useCallback, useEffect, useState } from "react";
 function actionByKey(key) {
   const keyActionMap = {
     KeyW: "moveForward",
-    KeyA: "moveBackward",
-    KeyS: "moveLeft",
+    KeyA: "moveLeft",
+    KeyS: "moveBackward",
     KeyD: "moveRight",
     Space: "jump",
     Digit1: "dirt",

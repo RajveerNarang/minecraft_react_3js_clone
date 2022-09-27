@@ -43,9 +43,9 @@ export const Player = () => {
     );
 
     const sideVector = new Vector3(
+      (moveLeft ? 1 : 0) - (moveRight ? 1 : 0),
       0,
-      0,
-      (moveLeft ? 1 : 0) - (moveRight ? 1 : 0)
+      0
     );
 
     direction
