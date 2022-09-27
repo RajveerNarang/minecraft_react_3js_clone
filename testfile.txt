@@ -1,16 +1,17 @@
 hello minecraft game
 
-boilerplate: 
-sky
-Textures and images 
-ground
-player 
-keyboard inputs
-first person view
-gravity
-movement
-state management
-cubes
+boilerplate: ✅
+sky ✅
+Textures and images ✅
+ground ✅
+player ✅
+keyboard inputs ✅
+first person view ✅
+gravity ✅
+movement ✅
+state management ✅
+cubes ✅
+Adding cubes
 cube type selector
 save world in local storage
 build a house 
