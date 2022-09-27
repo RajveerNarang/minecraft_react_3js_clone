@@ -1,4 +1,4 @@
-hello minecraft game
+hello minecraft game clone
 
 boilerplate: ✅
 sky ✅
@@ -11,7 +11,9 @@ gravity ✅
 movement ✅
 state management ✅
 cubes ✅
-Adding cubes
-cube type selector
-save world in local storage
-build a house 
+Adding cubes ✅
+Removing cubes ✅
+cube type selector ✅
+hover state on cubes ✅
+save world in local storage ✅
+build a house ✅
