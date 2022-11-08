@@ -45,9 +45,9 @@
       "last 1 safari version"
     ]
   },
-  "homePage":{
-    "homepage": "https://rajveernarang.github.io/minecraft_react_3js_clone"
-  },
+  // "homePage":{
+  //   "homepage": "https://rajveernarang.github.io/minecraft_react_3js_clone"
+  // },
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
